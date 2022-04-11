@@ -1,8 +1,8 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
-# Lawnicons
-$(call inherit-product-if-exists, vendor/lawnicons/overlay.mk)
+# Themeicons
+$(call inherit-product, packages/overlays/ThemeIcons/config.mk)
 
 PRODUCT_BRAND ?= LineageOS
 
